@@ -2,11 +2,14 @@
 <html lang="pt-br">
 <head>
 
-    <title>Crie sua conta gratuitamente</title>
+    <title>Require chat_online</title>
 
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- BootStrap Require -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
 
     <!-- Style Sheets -->
     <link rel="stylesheet" href="./style.css">
@@ -14,10 +17,42 @@
 </head>
 <body>
     <!-- Components -->
+    <main class="content_page">
+        <fieldset>
+            <legend>Crie sua conta</legend>
+            <form action="../../../../back_end/public/new_account.php" method="post">
+                <!-- Form para registrar uma nova conta -->
+                <label for="username_value">Digite seu nome inteiro abaixo</label>
+                <input type="text" placeholder="all name" id="username_value" class="input_value" name="username" spellcheck="false">
+                <br>
+                <label for="password_value">Digite sua senha abaixo</label>
+                <input type="text" placeholder="Password" id="password_value" class="input_value" name="password" spellcheck="false">
+                <br>
+                <label for="surname_value">Digite seu apelido abaixo <br>(obs: Irá aparecer junto com suas msgs)</label>
+                <input type="text" placeholder="Apelido" id="surname_value" class="input_value" name="surname" spellcheck="false">
+                <br>
+                <!-- Button para submitar o form -->
+                <button type="submit">Criar</button>
+            
+            </form>
+        </fieldset>
+        <hr>
+        <fieldset>
+            <legend>Entre em sua conta</legend>
+            <form action="" method="post">
+                <!-- Form para entrar em uma conta -->
+                <label for="username_value2">Digite seu username</label>
+                <input type="text" placeholder="all name" id="username_value2" class="input_value" name="username" spellcheck="false">
+                <br><br>
+                <label for="password_value2">Digite sua senha</label>
+                <input type="text" placeholder="Password" id="password_value2" class="input_value" name="password" spellcheck="false">
+                <br><br>
+                <!-- Button para submitar o form -->
+                <button type="submit">Entrar</button>
 
-    <header class="header_page">
-        <div class="container_logo"></div>
-    </header>
+            </form>
+        </fieldset>
+    </main>
 
 </body>
 </html>
