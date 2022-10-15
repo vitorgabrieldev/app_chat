@@ -24,10 +24,10 @@
             $_SESSION['apelido'] = $regData['apelido'];
 
             // Redirect
-            header('LOCATION: /app_chat/front_end/app/public/index.php');  
+            header('LOCATION: ../../front_end/app/public/index.php');  
 
         } else {
-            header('LOCATION: /app_chat/front_end/app/public/components/create_and_enter_account/login.html');  
+            header('LOCATION: ../../front_end/app/public/components/create_and_enter_account/login.html');  
         };
 
     };

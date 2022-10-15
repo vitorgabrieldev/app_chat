@@ -24,12 +24,6 @@
 
             echo "<li class=\"msg_item\">" . $msg . "</li>";
 
-            // if(!isset($_SESSION)) {
-            //     session_start();
-            // };
-
-            // session_destroy();
-
         };
         
     ?>
@@ -40,6 +34,13 @@
             <input type="text" placeholder="Mensagem" name="msg" id="msg">
             <button type="submit">Enviar</button>
         </form>
+        <fieldset>
+            <legend>Setings Chat</legend>
+            <form action="../../../back_end/public/settings_chat.php" method="post">
+                <button name="clean" type="submit">Limpar chat</button>
+                <button name="logout" type="submit">Deslogar</button>
+            </form>
+        </fieldset>
     </fieldset>
 </body>
 </html>
