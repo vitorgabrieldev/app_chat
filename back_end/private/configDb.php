@@ -4,9 +4,10 @@
 
     $dbHost = 'localhost';
     $dbUser = 'root';
-    $dbDatabase = 'system_chat_online';
     $dbPassword = '';
 
+    $dbDatabase = 'chat_online';
+    
     // Connection variable
     $mysqli = new mysqli($dbHost, $dbUser, $dbPassword, $dbDatabase);
 
